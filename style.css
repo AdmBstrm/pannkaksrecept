@@ -42,9 +42,10 @@ h2 {
 
 .servering {
   display: flex;
+  /* display: grid; */
   gap: 20px;
   height: 467px;
-  padding-bottom: 20px;
+  padding-bottom: 64px;
 }
 
 .servering img {
@@ -53,3 +54,31 @@ h2 {
   object-fit: cover;
 }
 
+/* Mobilanpassning  */
+
+@media (max-width: 440px) {
+
+  .container {
+      width: 100%;
+  max-width: 1280px;
+  }
+  .servering {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .servering img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+    header {
+    height: auto;
+    max-height: 500px;
+    aspect-ratio: 4 / 5;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
